@@ -1,0 +1,73 @@
+body{
+	font-family: 'Exo', sans-serif;
+	background-color: #CCCCC2;
+}
+
+a, a:hover, a:active, a:visited, a:focus {
+	color: inherit;
+	text-decoration:none;
+	outline:none;
+}
+
+.title span {
+	position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+	font-size: 9em;
+	width:100%
+}
+
+.buttons {
+	position:relative;
+	top: 70vh;
+}
+
+.buttons a {
+	padding: 0.9em 2.5em;
+	font-size:1.8em;
+	position:relative !important;
+}
+
+
+.buttons a:before {
+  content: "";
+  position: absolute;
+  background: #87DBBB;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 100%;
+  z-index: -1;
+  transition: top 0.09s ease-in;
+}
+
+.buttons a:hover:before {
+	top: 0;
+}
+
+@media (max-width:767px) {
+	.title span {
+		font-size: 5em;
+	}
+	
+	.buttons {
+		top: 64vh;
+	}
+	
+	.buttons a {
+		padding: 0.2em 33%;
+		font-size:1.8em;
+	}
+	
+	.buttons > div {
+		margin-bottom: 0.6em;
+	}
+}
+
+::selection {
+  background: #9DF1D4;
+}
+::-moz-selection {
+  background: #9DF1D4;
+}
